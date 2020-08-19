@@ -1,11 +1,15 @@
-package com.qf.service;
+package com.qf.dao;
 
 import com.qf.pojo.User;
+import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Select;
 
 import java.util.List;
 
-public interface UserService {
+@Mapper
+public interface UserDao {
 
+    @Select("select * from user")
     List<User> getAllUsers();
 
     public User selectUserByUid(int uid);
