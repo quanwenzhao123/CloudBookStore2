@@ -8,9 +8,9 @@
     <!--<select id="selectAllUser" resultType="User">
     select * from users
     </select>-->
-    <!--<select id="getAllUsers" resultType="User">
-        select * from users
-    </select>-->
+    <select id="getAllUsers" resultType="User">
+        select * from user
+    </select>
 
     <select id="selectUserByUid" resultType="User">
         select * from user where uid=#{uid}

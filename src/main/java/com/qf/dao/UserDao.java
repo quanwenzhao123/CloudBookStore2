@@ -9,7 +9,7 @@ import java.util.List;
 @Mapper
 public interface UserDao {
 
-    @Select("select * from user")
+    //@Select("select * from user")
     List<User> getAllUsers();
 
     public User selectUserByUid(int uid);
